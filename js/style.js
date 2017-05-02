@@ -353,11 +353,7 @@ $(document).ready(function(){
      event.preventDefault();
         $("#table-profile").hide();
         $("#pay-slip").show();
-
   });
-
-
-
 
 });
 
