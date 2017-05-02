@@ -12,10 +12,10 @@ $(document).ready(function(){
          $(".edit-profile-form,#icon-arrow-left").hide();
          $(".profile-main-content,#edit-profile,.edit-btn").show();
 
-
   });
 });
 
+/*Hide and SHOW on Select form*/
 document.getElementById('test').addEventListener('change', function () {
     var style = this.value == 2 ? 'block' : 'none';
      var style2 = this.value == 1 ? 'block' : 'none';
@@ -37,7 +37,7 @@ $(document).on('click', '#close-preview', function(){
 });
 
 
-
+/*UPLOAD FILE JS*/
 $(function() {
     // Create the close button
     var closebtn = $('<button/>', {
@@ -97,6 +97,7 @@ $(document).on('click', '#close-preview', function(){
     );
 });
 
+/*Upload File 2*/
 $(function() {
     // Create the close button
     var closebtn = $('<button/>', {
@@ -156,6 +157,8 @@ $(document).on('click', '#close-preview', function(){
     );
 });
 
+
+/*Upload file 3*/
 $(function() {
     // Create the close button
     var closebtn = $('<button/>', {
@@ -202,7 +205,7 @@ $(function() {
     });
 });
 
-
+/*ADD FORM JS-1*/
 var room = 1;
 function education_fields() {
   room++;
@@ -217,7 +220,7 @@ var rdiv = 'removeclass'+room;
    $('.removeclass'+rid).remove();
  }
 
-
+/*ADD FORM JS-2*/
  var room = 1;
 function education_fields2() {
    room++;
@@ -232,6 +235,7 @@ var rdiv = 'removeclass'+room;
    $('.removeclass'+rid).remove();
   }
 
+ /*ADD FORM JS-3*/
   var room = 1;
  function education_fields3() {
     room++;
@@ -276,7 +280,7 @@ var rdiv = 'removeclass'+room;
 
 
 
-
+/*HIDE AND SHOW*/
 $(document).ready(function(){
 
   // $("#employee").click(function(e){
@@ -363,12 +367,12 @@ jQuery(document).ready(function($) {
     });
 });
 
-function fixedScrolled(e) {
-       var evt = window.event || e;
-       var delta = evt.detail ? evt.detail * (-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
-       $(".well").scrollTop($(".well").scrollTop() - delta);
-   }
-fixedScrolled(e);
-   var mousewheelevt = (/Gecko\//i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel";
-   if (fixedElement.attachEvent) fixedElement.attachEvent("on" + mousewheelevt, fixedScrolled);
-   else if (fixedElement.addEventListener) fixedElement.addEventListener(mousewheelevt, fixedScrolled, false);
+// function fixedScrolled(e) {
+//        var evt = window.event || e;
+//        var delta = evt.detail ? evt.detail * (-120) : evt.wheelDelta; //delta returns +120 when wheel is scrolled up, -120 when scrolled down
+//        $(".well").scrollTop($(".well").scrollTop() - delta);
+//    }
+// fixedScrolled(e);
+//    var mousewheelevt = (/Gecko\//i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel";
+//    if (fixedElement.attachEvent) fixedElement.attachEvent("on" + mousewheelevt, fixedScrolled);
+//    else if (fixedElement.addEventListener) fixedElement.addEventListener(mousewheelevt, fixedScrolled, false);
