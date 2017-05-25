@@ -10,7 +10,13 @@
         <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
         <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link rel="shortcut icon" href="img/cartix-favicon.png" type="image/x-icon">
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/moment.min.js"></script>
+        <script type="text/javascript" src="js/daterangepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/daterangepicker.css"/>
     </head>
     <body>
         <div class="container-fluid">
@@ -37,23 +43,29 @@
                         </div>
                     </div>
                     <div class="col-md-5">
-                        <div class="btn-employee">
-                            <a href="project.html"><button type="button"  class="btn btn-default btn-lg employees-details1">PROJECTS</button></a>
-                            <a href="index.html"><button type="button" class="btn btn-default btn-lg employees-details2" id="employee">EMPLOYEES</button></a>
-                            <a href="payroll.html"><button type="button" class="btn btn-default btn-lg employees-details1">PAYROLL</button></a>
+                      <div id="navbar">
+                       <div id="holder">
+                       <div class="btn-employee">
+                         <ul>
+                          <li><a href="project.html" class="employees-details1">PROJECTS</a></li>
+                          <li><a href="" class="employees-details1">EMPLOYEES</a></li>
+                          <li><a href="payroll.html" class="employees-details1">PAYROLL</a></li>
+                        </ul>
+                        </div>
+                        </div>
+                        </div>
                             <p class="employees-details user"><img src="img/shape.svg">
                             <div class="dropdown employees-details">
                                 <span class="dropdown-toggle" type="text" data-toggle="dropdown"><span> My name</span>
                                 <span class="caret"></span></span>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">Settings</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#myModal3">Settings</a></li>
                                     <li><a href="#">Help</a></li>
                                     <li><a href="#">Report a problem</a></li>
                                     <li><a href="#">Log out</a></li>
                                 </ul>
                             </div>
                             </p>
-                        </div>
                     </div>
                 </div>
             </nav>
@@ -119,61 +131,32 @@
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                                 <tr class="name-one2">
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                                 <tr class="name-one2">
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                                 <tr class="name-one2">
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
+
                             </tbody>
                         </table>
                         <div class="fa-icon">
                             <!--ADD DATA IN TABLE-1-->
-                            <div class="">
-                                <div class="row">
-                                    <div class="col-sm-3 nopadding">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="Schoolname" name="Schoolname[]" value="" placeholder="Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 nopadding">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="Major" name="Major[]" value="" placeholder="relation">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4 nopadding">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="date-birth">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-2 nopadding">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <div class="input-group-btn">
-                                                    <button class="btn btn-default btn-plus" type="button"  onclick="education_fields4();"><i class="fa fa-plus"></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="education_fields4">
-                                    </div>
-                                    <div class="clear"></div>
-                                </div>
-                            </div>
+
                         </div>
                         <br><br>
                     </div>
@@ -199,62 +182,53 @@
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                                 <tr class="name-one2">
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                                 <tr class="name-one2">
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                                 <tr class="name-one2">
                                     <td>lil tunechi</td>
                                     <td>project manager</td>
                                     <td>09 april 1994</td>
-                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td><span class="glyphicon glyphicon-remove remove-table"></span></td>
                                 </tr>
                             </tbody>
                         </table>
                         <!--ADD DATA IN TABLE-2-->
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-sm-3 nopadding">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="Schoolname" name="Schoolname[]" value="" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-sm-3 nopadding">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="Major" name="Major[]" value="" placeholder="relation">
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 nopadding">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="date-birth">
-                                    </div>
-                                </div>
-                                <div class="col-sm-2 nopadding">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-default btn-plus" type="button"  onclick="education_fields5();"><i class="fa fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="education_fields5">
-                                </div>
-                                <div class="clear"></div>
-                            </div>
-                        </div>
-                        <a href=""><button type="button"  class="btn btn-default btn-lg terminate-button" id="project">Terminate contract</button></a>
                     </div>
+
+                    <div class="download-files1">
+                    <a href="luca.pdf" target="_blank">stanislass-contract.pdf</a>
+                      <span class=" glyphicon glyphicon-remove remove-attachment"></span>
+                  </div><br>
+                  <div class="download-files1">
+                  <a href="luca.pdf" target="_blank">stanislass-CV.pdf</a>
+                  <span class=" glyphicon glyphicon-remove remove-attachment"></span>
+                </div><br>
+                <div class="download-files1">
+                <a href="luca.pdf" target="_blank">0192343223432343 ID NO.pdf</a>
+                <span class=" glyphicon glyphicon-remove remove-attachment"></span>
+              </div>
+                <br>
+               <div class="record-text">
+                 <p class="record">Record Added By : <span class="record-detail">System Administration</span></p>
+                 <p class="record">Record Added On : <span class="record-detail">September 11,2014 at 4:25 pm</span></p>
+               </div>
+
+                    <div class="terminate-btn">
+                    <button type="button"  class="btn btn-default btn-lg terminate-button" data-toggle="modal" data-target="#myModal2" id="project">Terminate contract</button>
+
+                  </div>
                 </div>
                 <div class="edit-profile-form">
                     <form>
@@ -345,6 +319,147 @@
             <div class="btn-leave">
                 <a href="view-leave.html"><button type="button" class="btn btn-default btn-lg view-leave">View Leave</button></a>
             </div>
+
+            <!--Modal terminate contract-->
+            <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="header-modal modal-terminate">
+                           <h4 class="modal-title registration2" id="gridSystemModalLabel">Contract Termination</h4>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <div class="row">
+                           <div class="col-md-4">
+                              <form>
+                                <div class="form-group">
+                                   <label for="email">Start date</label>
+                                   <input type="text" name="startdate" class="form-control"  value="01/01/2017">
+                                </div>
+                              </form>
+                           </div>
+                           <div class="col-md-4">
+                              <form>
+                                <div class="form-group">
+                                    <label for="sel1">Termination reason:</label>
+                                    <select class="form-control" id="sel1">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                    </select>
+                                  </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-12">
+                             <form>
+                             <div class="form-group">
+                               <label for="comment">Comment:</label>
+                               <textarea class="form-control" rows="5" id="comment"></textarea>
+                             </div>
+                           </form>
+                           </div>
+                        </div>
+
+                        <a href="project.html"><button type="submit" class="btn btn-success btn-terminate">TERMINATE</button></a>
+                     </div>
+                     <!-- /.modal-content -->
+                     <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+               </div>
+            </div>
+
+            <!--Modal settings-->
+            <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+               <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                     <div class="modal-header ">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="header-modal modal-terminate">
+                           <h4 class="modal-title registration3" id="gridSystemModalLabel">Profile settings</h4>
+                        </div>
+                     </div>
+                     <div class="modal-body">
+                        <div class="row">
+                          <div class="col-md-4">
+                             <form>
+                                <div class="form-group">
+                                   <label for="text">First name</label>
+                                   <input type="text" class="form-control" placeholder="text...." id="">
+                                </div>
+                             </form>
+                          </div>
+                          <div class="col-md-4">
+                             <form>
+                                <div class="form-group">
+                                   <label for="text">Last name</label>
+                                   <input type="text" class="form-control" placeholder="text...." id="">
+                                </div>
+                             </form>
+                          </div>
+                          <div class="col-md-4">
+                          <div class="form-group">
+                             <label for="sel1">Gender</label>
+                             <select class="form-control" id="sel1">
+                                <option hidden>Select</option>
+                                <option>Male</option>
+                                <option>female</option>
+                             </select>
+                          </div>
+                        </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                          <form>
+                             <div class="form-group">
+                                <label for="text">Email</label>
+                                <input type="text" class="form-control" placeholder="text...." id="">
+                             </div>
+                          </form>
+                        </div>
+                        </div>
+                          <p class="approve">Change password</p>
+                          <div class="row">
+                            <div class="col-md-4">
+                               <form>
+                                  <div class="form-group">
+                                     <label for="text">Current password</label>
+                                     <input type="password" class="form-control" placeholder="pwd..." id="">
+                                  </div>
+                               </form>
+                            </div>
+                            <div class="col-md-4">
+                               <form>
+                                  <div class="form-group">
+                                     <label for="text">New password</label>
+                                     <input type="password" class="form-control" placeholder="pwd...." id="">
+                                  </div>
+                               </form>
+                            </div>
+                            <div class="col-md-4">
+                              <form>
+                                 <div class="form-group">
+                                    <label for="text">Confirm password</label>
+                                    <input type="password" class="form-control" placeholder="pwd...." id="">
+                                 </div>
+                              </form>
+                          </div>
+                          </div>
+                        <button type="submit" class="btn btn-success setting-profile">SUBMIT</button>
+                     </div>
+                     <!-- /.modal-content -->
+                     <!-- /.modal-dialog -->
+                  </div>
+                  <!-- /.modal -->
+               </div>
+            </div>
+
             <!--PROFILE TABLE-->
             <section class="table-profile">
                 <table class="table">
@@ -456,6 +571,55 @@
                             <td>uwimana pierre</td>
                             <td>9</td>
                         </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
+                        <tr class="active name-one">
+                            <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                            <td>2015</td>
+                            <td>uwimana pierre</td>
+                            <td>uwimana pierre</td>
+                            <td>9</td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="text-center">
@@ -471,10 +635,16 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <footer>
-        </footer>
-        <script src="js/jquery.min.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+   </div>
+
+  <footer>
+ </footer>
+
         <script src="js/bootstrap.min.js"></script>
         <script src="js/style.js"></script>
         <script src="js/script.js"></script>

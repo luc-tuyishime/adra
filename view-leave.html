@@ -9,7 +9,13 @@
       <link rel="//fonts.googleapis.com/css?family=Open+Sans">
       <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
       <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+      <script type="text/javascript" src="js/moment.min.js"></script>
+      <script type="text/javascript" src="js/daterangepicker.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/daterangepicker.css"/>
    </head>
    <body>
       <div class="container-fluid">
@@ -36,10 +42,17 @@
                   </div>
                </div>
                <div class="col-md-5">
+                 <div id="navbar">
+                  <div id="holder">
                   <div class="btn-employee">
-                     <a href="project.html"><button type="button"  class="btn btn-default btn-lg employees-details1">PROJECTS</button></a>
-                     <a href="index.html"><button type="button" class="btn btn-default btn-lg employees-details2">EMPLOYEES</button></a>
-                     <a href="payroll.html"><button type="button" class="btn btn-default btn-lg employees-details1">PAYROLL</button></a>
+                    <ul>
+                     <li><a href="project.html" class="employees-details1">PROJECTS</a></li>
+                     <li><a href="" class="employees-details1">EMPLOYEES</a></li>
+                     <li><a href="payroll.html" class="employees-details1">PAYROLL</a></li>
+                   </ul>
+                   </div>
+                   </div>
+                   </div>
                      <p class="employees-details user"><img src="img/shape.svg">
                      <div class="dropdown employees-details">
                         <span class="dropdown-toggle" type="text" data-toggle="dropdown"><span> My name</span>
@@ -52,7 +65,7 @@
                         </ul>
                      </div>
                      </p>
-                  </div>
+
                </div>
             </div>
          </nav>
@@ -182,137 +195,336 @@
                      </table>
                      <a href=""><button type="button"  class="btn btn-default btn-lg terminate-button" id="project">Terminate contract</button></a>
                   </div>
+
+
+
+
+
+
+
+
+
+
                   <div class="col-md-8 table-bg-color">
                      <div class="btn-leave">
                         <a href="profile.html"><button type="button" class="btn btn-default btn-lg view-leave view-profile">View Profile</button></a>
                      </div>
                      <section id="view-leaves" class="view-leaves">
-                        <table class="table">
-                           <p><span class="employee-name">10 items:</span></p>
-                           <thead>
-                              <tr class="table-header-style2">
-                                 <th></th>
-                                 <th>Type</th>
-                                 <th>Reason</th>
-                                 <th>Start Date</th>
-                                 <th>Duration(Days)</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
-                                 <td></td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                              <tr class="active name-one">
-                                 <td><span class="glyphicon glyphicon-ok-sign"></span></td>
-                                 <td>lil tunechi</td>
-                                 <td>project manager</td>
-                                 <td>09 april 1994</td>
-                                 <td>09 april 1994</td>
-                              </tr>
-                           </tbody>
-                        </table>
-                        <div class="fa-icon">
-                           <button class="btn btn-lg btn-default btn-circle" data-toggle="modal" data-target="#myModal3"><i class="fa fa-plus"></i></button>
-                        </div>
-                        <div class="text-center">
-                           <div class="pagination">
-                              <a href="#">&laquo;</a>
-                              <a href="#">1</a>
-                              <a class="#" href="#">2</a>
-                              <a href="#">3</a>
-                              <a href="#">4</a>
-                              <a href="#">5</a>
-                              <a href="#">6</a>
-                              <a href="#">&raquo;</a>
+
+
+                       <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                         <!-- Indicators -->
+                         <ol class="carousel-indicators">
+                           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                           <li data-target="#myCarousel" data-slide-to="1"></li>
+                           <li data-target="#myCarousel" data-slide-to="2"></li>
+                         </ol>
+
+                         <!-- Wrapper for slides -->
+                         <div class="carousel-inner">
+
+                           <div class="item active">
+                             <div id="table-leave-default">
+                              <table class="table">
+                                 <p><span class="employee-name">10 items:</span></p>
+                                 <thead>
+                                    <tr class="table-header-style2">
+                                       <th></th>
+                                       <th>Type</th>
+                                       <th>Reason</th>
+                                       <th>Start Date</th>
+                                       <th>Duration(Days)</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                       <td></td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                    <tr class="active name-one">
+                                       <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                       <td>lil tunechi</td>
+                                       <td>project manager</td>
+                                       <td>09 april 1994</td>
+                                       <td>09 april 1994</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                              <div class="text-center">
+                                 <div class="pagination">
+                                    <a href="#">&laquo;</a>
+                                    <a href="#">1</a>
+                                    <a class="#" href="#">2</a>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#">6</a>
+                                    <a href="#">&raquo;</a>
+                                 </div>
+                              </div>
+                            </div>
                            </div>
-                        </div>
+
+                           <div class="item">
+                             <!--table leave on hover-->
+                              <div id="table-leave-on-switch">
+                               <table class="table">
+                                  <p><span class="employee-name">10 items:</span></p>
+                                  <thead>
+                                     <tr class="table-header-style2">
+                                        <th></th>
+                                        <th>Type of leave</th>
+                                        <th>Total leave</th>
+                                        <th>Previous days</th>
+                                        <th>Remaining days</th>
+                                        <th>Requested days</th>
+                                        <th>Balance</th>
+                                     </tr>
+                                  </thead>
+                                  <tbody>
+                                     <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                     <tr class="active name-one">
+                                        <td><span class="glyphicon glyphicon-ok-sign"></span></td>
+                                        <td>lil tunechi</td>
+                                        <td>project manager</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                        <td>09 april 1994</td>
+                                     </tr>
+                                  </tbody>
+                               </table>
+
+                               <div class="text-center">
+                                  <div class="pagination">
+                                     <a href="#">&laquo;</a>
+                                     <a href="#">1</a>
+                                     <a class="#" href="#">2</a>
+                                     <a href="#">3</a>
+                                     <a href="#">4</a>
+                                     <a href="#">5</a>
+                                     <a href="#">6</a>
+                                     <a href="#">&raquo;</a>
+                                  </div>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         <!-- Left and right controls -->
+                         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                           <span class="glyphicon glyphicon-chevron-left"></span>
+                           <span class="sr-only">Previous</span>
+                         </a>
+                         <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                           <span class="glyphicon glyphicon-chevron-right"></span>
+                           <span class="sr-only">Next</span>
+                         </a>
+                       </div>
+                       <div class="fa-icon">
+                          <button class="btn btn-lg btn-default btn-circle" data-toggle="modal" data-target="#myModal3"><i class="fa fa-plus"></i></button>
+                       </div>
                      </section>
                   </div>
                </div>
@@ -333,7 +545,7 @@
                         <div class="col-md-4">
                            <form>
                               <div class="form-group">
-                                 <label for="sel1">Gender</label>
+                                 <label for="sel1">Leave type</label>
                                  <select class="form-control" id="test">
                                     <option hidden>Select</option>
                                     <option value="1">Work leave</option>
@@ -357,7 +569,7 @@
                            <form>
                               <div class="form-group">
                                  <label for="text">Start date</label>
-                                 <input type="text" class="form-control budgeted" id="" placeholder="01/01/2017">
+                                 <input type="text" name="startdate-leave1" class="form-control"  value="01/01/2017">
                               </div>
                            </form>
                         </div>
@@ -365,11 +577,48 @@
                            <form>
                               <div class="form-group">
                                  <label for="text">End date</label>
-                                 <input type="text" class="form-control budgeted" id="email" placeholder="01/01/2017">
+                                 <input type="text" name="startdate-leave2" class="form-control"  value="01/01/2017">
                               </div>
                            </form>
                         </div>
                      </div>
+                     <div class="row">
+                       <div class="col-md-8">
+                          <form>
+                             <div class="form-group">
+                                <label for="text">Adresse while on leave</label>
+                                <input type="text" class="form-control" placeholder="Id_number" id="">
+                             </div>
+                          </form>
+                       </div>
+                     </div>
+                        <p class="approve">Approvals</p>
+                     <div class="row">
+                     <div class="col-md-4">
+                        <form>
+                           <div class="form-group">
+                              <label for="text">Position</label>
+                              <input type="text" class="form-control" placeholder="text...." id="">
+                           </div>
+                        </form>
+                     </div>
+                     <div class="col-md-4">
+                        <form>
+                           <div class="form-group">
+                              <label for="text">Name</label>
+                              <input type="text" class="form-control" placeholder="text...." id="">
+                           </div>
+                        </form>
+                     </div>
+                     <div class="col-md-4">
+                        <form>
+                           <div class="form-group">
+                              <label for="text">Email</label>
+                              <input type="email" class="form-control" placeholder="text...." id="">
+                           </div>
+                        </form>
+                     </div>
+                   </div>
                      <button type="submit" class="btn btn-success btn-add">ADD</button>
                   </div>
                   <!-- /.modal-content -->
@@ -382,7 +631,7 @@
     </div>
       <footer>
       </footer>
-      <script src="js/jquery.min.js"></script>
+      <!-- <script src="js/jquery.min.js"></script> -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/style.js"></script>
    </body>

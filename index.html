@@ -9,7 +9,13 @@
       <link rel="//fonts.googleapis.com/css?family=Open+Sans">
       <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
       <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+        <script type="text/javascript" src="js/moment.min.js"></script>
+        <script type="text/javascript" src="js/daterangepicker.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/daterangepicker.css"/>
    </head>
    <body>
       <div class="container-fluid">
@@ -28,7 +34,7 @@
                               <input type="text" class="search-query form-control" placeholder="Search here" />
                               <span class="input-group-btn">
                               <button class=" btn btn-danger" type="button">
-                              <span class=" glyphicon glyphicon-search"></span>
+                              <span class="glyphicon glyphicon-search"></span>
                               </button>
                               </span>
                            </div>
@@ -36,12 +42,19 @@
                      </div>
                   </div>
                   <div class="col-md-5">
+                    <div id="navbar">
+                     <div id="holder">
                      <div class="btn-employee">
-                        <a href="project.html"><button type="button"  class="btn btn-default btn-lg employees-details1">PROJECTS</button></a>
-                        <a href=""><button type="button" class="btn btn-default btn-lg employees-details2" id="employee">EMPLOYEES</button></a>
-                        <a href="payroll.html"><button type="button" class="btn btn-default btn-lg employees-details1">PAYROLL</button></a>
+                       <ul>
+                        <li><a href="project.html" class="employees-details1">PROJECTS</a></li>
+                        <li><a href="" class="employees-details1" id="onlink">EMPLOYEES</a></li>
+                        <li><a href="payroll.html" class="employees-details1">PAYROLL</a></li>
+                      </ul>
+                      </div>
+                      </div>
+                      </div>
                         <p class="employees-details user"><img src="img/shape.svg">
-                        <div class="dropdown employees-details">
+                        <div class="dropdown  employees-details">
                            <span class="dropdown-toggle" type="text" data-toggle="dropdown"><span> My name</span>
                            <span class="caret"></span></span>
                            <ul class="dropdown-menu">
@@ -52,7 +65,6 @@
                            </ul>
                         </div>
                         </p>
-                     </div>
                   </div>
                </div>
                <div class="container">
@@ -214,78 +226,105 @@
                                 </div>
                              </form>
                           </div>
+                          <div class="col-md-4">
+                             <form>
+                                <div class="form-group">
+                                   <label>National ID Number</label>
+                                   <input type="text" class="form-control" placeholder="last name" id="last-name">
+                                </div>
+                             </form>
+                          </div>
+                       </div>
+                    </div>
+                    <div class="col-md-12">
+                       <div class="col-md-4">
+                          <form>
+
+                               <div class="form-group">
+                                  <label for="email">Start date</label>
+                                  <input type="text" name="startdate" class="form-control"  value="01/01/2017">
+                               </div>
+
+                          </form>
+                       </div>
+                       <div class="col-md-4">
+                         <div class="form-group">
+                            <label for="sel1">Gender</label>
+                            <select class="form-control" id="sel1">
+                               <option hidden>Select</option>
+                               <option>Male</option>
+                               <option>female</option>
+                            </select>
+                         </div>
+                      </form>
+                       </div>
+                       <div class="col-md-4">
+                          <form>
+                             <div class="form-group">
+                                <label>Personal Phone</label>
+                                <input type="email" class="form-control" placeholder="+250....." id="">
+                             </div>
+                          </form>
                        </div>
                     </div>
                     <div class="col-md-12">
                        <div class="col-md-4">
                           <form>
                              <div class="form-group">
-                                <label>National id_Nber</label>
-                                <input type="text" class="form-control" placeholder="Id_number" id="id_number">
+                                <label>Work Phone</label>
+                                <input type="text" class="form-control" placeholder="+250....." id="">
                              </div>
                           </form>
                        </div>
                        <div class="col-md-4">
                           <form>
                              <div class="form-group">
-                                <label>Telephone</label>
-                                <input type="text" class="form-control" placeholder="telephone" id="phone">
+                                <label>Work Email</label>
+                                <input type="text" class="form-control" placeholder="email" id="">
                              </div>
                           </form>
                        </div>
+
                        <div class="col-md-4">
                           <form>
-                             <div class="form-group">
-                                <label>Email</label>
-                                <input type="email" class="form-control" placeholder="email" id="email">
-                             </div>
+                            <div class="form-group">
+                               <label>Personal Email</label>
+                               <input type="text" class="form-control" placeholder="email" id="">
+                            </div>
                           </form>
                        </div>
                     </div>
                     <div class="col-md-12">
-                       <div class="col-md-3">
+                       <div class="col-md-4">
                           <form>
-                             <div class="form-group">
-                                <label>date of birth</label>
-                                <input type="text" class="form-control" placeholder="month" id="">
-                             </div>
+                            <div class="form-group">
+                               <label for="sel1">Hobby</label>
+                               <select class="form-control" id="test">
+                                  <option hidden>Select</option>
+                                  <option value="1">Reading</option>
+                                  <option value="2">Writing/blogging</option>
+                                  <option value="3">Jogging/walking</option>
+                                  <option value="4">Yoga</option>
+                                  <option value="5">Team sports: volleyball, bowling, soccer</option>
+                                  <option value="6">Dinner or Movie club</option>
+                                  <option value="7">Ballroom dancing</option>
+                                  <option value="8">Drawing/painting/photography</option>
+                                  <option value="9">Cooking/baking</option>
+                                  <option value="10">Knitting</option>
+                                  <option value="11">Quilting</option>
+                                  <option value="12">Antiques</option>
+                                  <option value="13">Decor</option>
+                                  <option value="14">Biking</option>
+                                  <option value="15">Dancing</option>
+                               </select>
+                            </div>
                           </form>
                        </div>
-                       <div class="col-md-3">
-                          <form>
-                             <div class="form-group">
-                                <label class="day-style">day</label>
-                                <input type="text" class="form-control" placeholder="day" id="">
-                             </div>
-                          </form>
-                       </div>
-                       <div class="col-md-3">
-                          <form>
-                             <div class="form-group">
-                                <label class="day-style">Email</label>
-                                <input type="email" class="form-control" placeholder="year" id="">
-                             </div>
-                          </form>
-                       </div>
-                       <div class="col-md-3">
-                          <form>
-                             <div class="form-group">
-                                <label for="sel1">Gender</label>
-                                <select class="form-control" id="sel1">
-                                   <option hidden>Select</option>
-                                   <option>Male</option>
-                                   <option>female</option>
-                                </select>
-                             </div>
-                          </form>
-                       </div>
-                    </div>
-                    <div class="col-md-12">
                        <div class="col-md-4">
                           <form>
                              <div class="form-group">
                                 <label>Education</label>
-                                <input type="text" class="form-control" placeholder="education" id="first-name">
+                                <input type="text" class="form-control" placeholder="education.." id="last-name">
                              </div>
                           </form>
                        </div>
@@ -544,10 +583,9 @@
 </div>
       <!--MODAL-PROJECT-->
       </main>
-      <footer>
-      </footer>
+
       </div>
-      <script src="js/jquery.min.js"></script>
+      <!-- <script src="js/jquery.min.js"></script> -->
       <script src="js/bootstrap.min.js"></script>
       <script src="js/style.js"></script>
    </body>

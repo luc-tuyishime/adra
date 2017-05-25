@@ -6,10 +6,18 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/bootstrap-min.css">
       <link rel="stylesheet" href="css/style.css" type="text/css">
+        <!-- <link rel="stylesheet" href="css/daterangepicker.css" type="text/css"> -->
       <link rel="//fonts.googleapis.com/css?family=Open+Sans">
       <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
       <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+      <script type="text/javascript" src="js/moment.min.js"></script>
+      <script type="text/javascript" src="js/daterangepicker.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/daterangepicker.css"/>
    </head>
    <body>
       <div class="container-fluid">
@@ -36,10 +44,18 @@
                </div>
             </div>
             <div class="col-md-5">
+              <div id="navbar">
+               <div id="holder">
                <div class="btn-employee">
-                  <a href="project.html"><button type="button"  class="btn btn-default btn-lg employees-details1">PROJECTS</button></a>
-                  <a href="index.html"><button type="button" class="btn btn-default btn-lg employees-details2" id="employee">EMPLOYEES</button></a>
-                  <a href="payroll.html"><button type="button" class="btn btn-default btn-lg employees-details1">PAYROLL</button></a>
+                 <ul>
+                  <li><a href="project.html" class="employees-details1" id="onlink">PROJECTS</a></li>
+                  <li><a href="index.html" class="employees-details1">EMPLOYEES</a></li>
+                  <li><a href="payroll.html" class="employees-details1">PAYROLL</a></li>
+                </ul>
+                </div>
+                </div>
+                </div>
+
                   <p class="employees-details user"><img src="img/shape.svg">
                   <div class="dropdown employees-details">
                      <span class="dropdown-toggle" type="text" data-toggle="dropdown"><span> My name</span>
@@ -52,7 +68,7 @@
                      </ul>
                   </div>
                   </p>
-               </div>
+
             </div>
          </div>
          <div class="container">
@@ -225,13 +241,8 @@
                                     <input type="text" class="form-control" placeholder="project title" id="">
                                  </div>
                                  <div class="form-group">
-                                    <label for="sel1">Donor</label>
-                                    <select class="form-control" id="sel1">
-                                       <option>1</option>
-                                       <option>2</option>
-                                       <option>3</option>
-                                       <option>4</option>
-                                    </select>
+                                    <label for="text">Donor</label>
+                                    <input type="text" class="form-control" placeholder="project title" id="">
                                  </div>
                               </form>
                            </div>
@@ -240,21 +251,16 @@
                            <div class="col-md-4">
                               <div class="form-group">
                                  <label for="email">Start date</label>
-                                 <input type="email" class="form-control budgeted" id="email" placeholder="01/01/2017">
+                                 <input type="text" name="birthdate" class="form-control"  value="01/01/2017">
                               </div>
                            </div>
                            <div class="col-md-4">
                               <div class="form-group">
-                                 <label for="email">Duration</label>
-                                 <input type="email" class="form-control budgeted" id="email" placeholder="2 ans">
+                                 <label for="email">End date</label>
+                                  <input type="text" name="birthdate-end" class="form-control"  value="01/01/2017">
                               </div>
                            </div>
-                           <div class="col-md-4">
-                              <div class="form-group">
-                                 <label for="email">Salaries budget</label>
-                                 <input type="email" class="form-control budgeted" id="email" placeholder="10,000,0000$">
-                              </div>
-                           </div>
+
                         </div>
                         <div class="row">
                            <div class="col-md-12">
@@ -290,11 +296,12 @@
                   <!-- /.modal -->
                </div>
             </div>
+
       </main>
+      </div>
+      </div>
       <footer>
       </footer>
-      </div>
-      <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/style.js"></script>
    </body>

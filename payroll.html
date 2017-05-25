@@ -9,6 +9,7 @@
       <link rel="//fonts.googleapis.com/css?family=Open+Sans">
       <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
       <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body>
@@ -36,10 +37,17 @@
                      </div>
                   </div>
                   <div class="col-md-5">
+                    <div id="navbar">
+                     <div id="holder">
                      <div class="btn-employee">
-                        <a href="project.html"><button type="button"  class="btn btn-default btn-lg employees-details1">PROJECTS</button></a>
-                        <a href="index.html"><button type="button" class="btn btn-default btn-lg employees-details2" id="employee">EMPLOYEES</button></a>
-                        <a href="payroll.html"><button type="button" class="btn btn-default btn-lg employees-details1">PAYROLL</button></a>
+                       <ul>
+                        <li><a href="project.html" class="employees-details1">PROJECTS</a></li>
+                        <li><a href="index.html" class="employees-details1">EMPLOYEES</a></li>
+                        <li><a href="payroll.html" class="employees-details1"  id="onlink">PAYROLL</a></li>
+                      </ul>
+                      </div>
+                      </div>
+                      </div>
                         <p class="employees-details user"><img src="img/shape.svg">
                         <div class="dropdown employees-details">
                            <span class="dropdown-toggle" type="text" data-toggle="dropdown"><span> My name</span>
@@ -52,7 +60,7 @@
                            </ul>
                         </div>
                         </p>
-                     </div>
+
                   </div>
                </div>
                <div class="container">
@@ -270,7 +278,7 @@
                         </tbody>
                      </table>
                      <div class="fa-icon">
-                        <button class="btn btn-lg btn-default btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i></button>
+                        <a href=""><button type="button"  class="btn btn-default btn-lg btn-report" id="project">Generate Report</button></a>
                      </div>
                      <div class="text-center">
                         <div class="pagination">
@@ -295,6 +303,6 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/style.js"></script>
-    
+
    </body>
 </html>

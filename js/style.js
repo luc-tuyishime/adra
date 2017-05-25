@@ -1,18 +1,164 @@
+/*new update */
+/*plot chart*/
+/*one*/
+var data = [{
+  values: [19, 26, 55],
+  labels: ['Residential', 'Non-Residential', 'Utility'],
+  type: 'pie'
+}];
+
+var layout = {
+  height: 380,
+  width: 480
+};
+
+Plotly.newPlot('myDiv', data, layout);
+
+/*Two*/
+var trace1 = {
+  x: ['giraffes', 'orangutans', 'monkeys'],
+  y: [20, 14, 23],
+  name: 'SF Zoo',
+  type: 'bar'
+};
+
+var trace2 = {
+  x: ['giraffes', 'orangutans', 'monkeys'],
+  y: [12, 18, 29],
+  name: 'LA Zoo',
+  type: 'bar'
+};
+
+var data = [trace1, trace2];
+
+var layout = {barmode: 'stack'};
+
+Plotly.newPlot('myDiv2', data, layout);
+
+/*Three*/
+var data = [{
+  values: [19, 26, 55],
+  labels: ['Residential', 'Non-Residential', 'Utility'],
+  type: 'pie'
+}];
+
+var layout = {
+  height: 380,
+  width: 480
+};
+
+Plotly.newPlot('myDiv3', data, layout);
+
+
+
+
+
+$(".btn-employee :button").change(function() {
+    console.log(this); // points to the clicked input button
+});
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+/*Date picker*/
+$(function() {
+  $('input[name="birthdate"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true
+  },
+  function(start, end, label) {
+      var years = moment().diff(start, 'years');
+
+  });
+
+  $('input[name="birthdate-end"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true
+  },
+  function(start, end, label) {
+      var years = moment().diff(start, 'years');
+
+  });
+
+  $('input[name="startdate"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true
+  },
+  function(start, end, label) {
+      var years = moment().diff(start, 'years');
+
+  });
+
+  $('input[name="startdate2"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true
+  },
+  function(start, end, label) {
+      var years = moment().diff(start, 'years');
+
+  });
+
+  $('input[name="startdate-leave1"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true
+  },
+  function(start, end, label) {
+      var years = moment().diff(start, 'years');
+
+  });
+
+  $('input[name="startdate-leave2"]').daterangepicker({
+      singleDatePicker: true,
+      showDropdowns: true
+  },
+  function(start, end, label) {
+      var years = moment().diff(start, 'years');
+
+  });
+
+});
+
+/*Switch button*/
+$(document).ready(function(){
+  $("#someSwitchOptionSuccess").click(function() {
+    if($(this).is(":checked")) {
+        $("#table-leave-default").hide();
+
+        $("#table-leave-on-switch").show();
+       }
+    });
+ });
+
+
+
+
+
+
+$("#button").click(function(){
+        $("#button").removeClass('active');
+        $(this).toggleClass('active');
+});
+
 $(document).ready(function(){
   $("#edit-profile").click(function(e){
          event.preventDefault();
          $(".profile-main-content,#edit-profile,.edit-btn").hide();
          $(".edit-profile-form,#icon-arrow-left").show();
-
-
   });
 
   $("#icon-arrow-left").click(function(e){
-         event.preventDefault();
-         $(".edit-profile-form,#icon-arrow-left").hide();
-         $(".profile-main-content,#edit-profile,.edit-btn").show();
-
-  });
+     event.preventDefault();
+     $(".edit-profile-form,#icon-arrow-left").hide();
+     $(".profile-main-content,#edit-profile,.edit-btn").show();
+   });
 });
 
 /*Hide and SHOW on Select form*/
