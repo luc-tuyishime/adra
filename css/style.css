@@ -598,7 +598,7 @@ div.btn-employee button.active{
   color: #fff;
 }
 
-.bg-1 {
+.bg-01 {
       background-color: #e0e0e0;
       color: #ffffff;
       padding-top: 30px;
@@ -714,6 +714,7 @@ div.btn-employee button.active{
     opacity: 0.5;
     filter: alpha(opacity=50);
 }
+
 .carousel-control .glyphicon-chevron-left{
   font-size: 18px;
   margin-left: -15px;
