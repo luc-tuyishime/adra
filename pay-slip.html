@@ -12,6 +12,17 @@
       <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
+   <style>
+   .table-pay-slip, .name-pay-slip, .details-pay-slip {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+.name-pay-slip, .details-pay-slip {
+    padding: 5px;
+    text-align: left;
+}
+   </style>
    <body>
       <div class="container-fluid">
          <header>
@@ -60,7 +71,6 @@
                            </ul>
                         </div>
                         </p>
-
                   </div>
                </div>
             </nav>
@@ -362,11 +372,53 @@
                               <br>
                               <p><span class="name">Names:</span><span class="name2"> Izina Runaka</span></p>
                               <p><span class="position">Position:</span><span class="name2"> Cleanner</span></p>
-                              <br>
+
+                              <!-- <p><span class="taxable">Taxable income 2014 :</span><span class="amount"> 100,637</span></p>
                               <p><span class="taxable">Taxable income 2014 :</span><span class="amount"> 100,637</span></p>
                               <p><span class="taxable">Taxable income 2014 :</span><span class="amount"> 100,637</span></p>
-                              <p><span class="taxable">Taxable income 2014 :</span><span class="amount"> 100,637</span></p>
-                              <p><span class="taxable">Taxable income 2014 :</span><span class="amount"> 100,637</span></p>
+                              <p><span class="taxable">Taxable income 2014 :</span><span class="amount"> 100,637</span></p> -->
+                              <table style="width:100%" class="table-pay-slip">
+                                  <tr>
+                                    <th class="name-pay-slip">Project:</th>
+                                    <td class="details-pay-slip">Year</td>
+                                    <td class="details-pay-slip">Number of Months</td>
+                                    <td class="details-pay-slip">Amount</td>
+                                  </tr>
+                                  <tr>
+                                    <th rowspan="3" class="name-pay-slip">Cotonou</th>
+                                    <td class="details-pay-slip">2014</td>
+                                    <td class="details-pay-slip">7</td>
+                                    <td class="details-pay-slip">200,000rwf</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="details-pay-slip">2015</td>
+                                     <td class="details-pay-slip">8</td>
+                                     <td class="details-pay-slip">350,000rwf</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="details-pay-slip">2016</td>
+                                     <td class="details-pay-slip">12</td>
+                                     <td class="details-pay-slip">400,000rwf</td>
+                                  </tr>
+
+                                  <tr>
+                                    <th rowspan="3" class="name-pay-slip">Portonovo</th>
+                                    <td class="details-pay-slip">2014</td>
+                                    <td class="details-pay-slip">7</td>
+                                    <td class="details-pay-slip">200,000rwf</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="details-pay-slip">2015</td>
+                                     <td class="details-pay-slip">8</td>
+                                     <td class="details-pay-slip">350,000rwf</td>
+                                  </tr>
+                                  <tr>
+                                    <td class="details-pay-slip">2016</td>
+                                     <td class="details-pay-slip">12</td>
+                                     <td class="details-pay-slip">400,000rwf</td>
+                                  </tr>
+
+                                </table>
                               <br>
                               <p><span class="taxable2">Gross pay :</span><span class="amount2">402,908</span></p>
                               <p><span class="taxable2">Total deduction :</span><span class="amount2">402,908</span></p>

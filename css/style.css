@@ -274,6 +274,7 @@ table tr:hover .remove-table {
 .Close{
   background-color: #fff;
 }
+
 .budgeted{
   display: inline-block;
 }
@@ -749,5 +750,53 @@ div.btn-employee button.active{
     }
     .carousel-control {
         top: 20%;
-    }
+     }
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color:#bdbdbd;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+.carousel-indicators .active {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    background-color: #4D8885;
+}
+
+
+.details-style2{
+  display: inline-table;
+  border: 2px solid #4D8885;
+  padding: 10px;
+  border-radius: 23px;
+  color: #4D8885;
+  font-weight: bold;
+  cursor: pointer;
+}
+.right-text{
+  float: right;
+}
+.professional-details{
+  display: none;
+}
+
+.details-style2.selected{
+  background-color: #4D8885;
+  color: #fff;
+}
+
+
+.close-icon{
+  font-size: 30px;
+  margin-right: 3px;
+  margin-top: 12px;
+  color: #3e2723;
 }

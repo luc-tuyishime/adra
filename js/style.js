@@ -1,3 +1,30 @@
+$('.details-style2').on('click', function(){
+    $('.details-style2').removeClass('selected');
+    $(this).addClass('selected');
+});
+
+//New edit style
+$(document).ready(function(){
+
+  $("#personal-details").click(function(e){
+     event.preventDefault();
+     $(".professional-details").hide();
+     $(".personal-details-hide").show();
+
+  });
+
+$("#professional-details").click(function(e){
+   event.preventDefault();
+   $(".personal-details-hide").hide();
+   $(".professional-details").show();
+});
+$("#openform").click(function(e){
+   event.preventDefault();
+  $(".open-form").show();
+ });
+
+
+});
 
 
 
@@ -408,6 +435,8 @@ $(document).ready(function(){
       $("#payroll-list,.drop-employer").show();
    });
 
+
+
 });
 $(document).ready(function(){
   $("#next").click(function(e){
@@ -457,6 +486,38 @@ jQuery(document).ready(function($) {
     $(".name-one").click(function() {
         window.location = $(this).data("href");
     });
+});
+
+$("#addsubj").click(function(e){
+  event.preventDefault();
+    $("#news").show();
+});
+
+$(function(){
+    $(".showpassword").each(function(index,input) {
+        var $input = $(input);
+        $('<label class="showpasswordlabel"/>').append(
+            $("<input type='checkbox' class='showpasswordcheckbox' />").click(function() {
+                var change = $(this).is(":checked") ? "text" : "password";
+                var rep = $("<input type='" + change + "' />")
+                    .attr("id", $input.attr("id"))
+                    .attr("name", $input.attr("name"))
+                    .attr('class', $input.attr('class'))
+                    .val($input.val())
+                    .insertBefore($input);
+                $input.remove();
+                $input = rep;
+             })
+        ).append($("<span/>").text(" Show password")).insertAfter($input);
+    });
+});
+
+bootbox.confirm("Are you sure?", function(result) {
+    if (result) {
+        console.log("User confirmed dialog");
+    } else {
+        console.log("User declined dialog");
+    }
 });
 
 // function fixedScrolled(e) {

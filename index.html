@@ -253,7 +253,7 @@
                          <form>
                             <div class="form-group">
                                <label for="text">Current password</label>
-                               <input type="password" class="form-control" placeholder="pwd..." id="">
+                               <input type="password" name="password" class="form-control showpassword" placeholder="pwd..." id="password"/>
                             </div>
                          </form>
                       </div>
@@ -261,7 +261,7 @@
                          <form>
                             <div class="form-group">
                                <label for="text">New password</label>
-                               <input type="password" class="form-control" placeholder="pwd...." id="">
+                               <input type="password" class="form-control showpassword" placeholder="pwd...." id="">
                             </div>
                          </form>
                       </div>
@@ -269,7 +269,7 @@
                         <form>
                            <div class="form-group">
                               <label for="text">Confirm password</label>
-                              <input type="password" class="form-control" placeholder="pwd...." id="">
+                              <input type="password" class="form-control showpassword" placeholder="pwd...." id="">
                            </div>
                         </form>
                     </div>
@@ -289,7 +289,7 @@
      <div class="modal-dialog" role="document">
         <div class="modal-content">
            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close-icon" aria-hidden="true">&times;</span></button>
               <div class="header-modal">
                  <h4 class="modal-title registration" id="gridSystemModalLabel">Employee Registration</h4>
               </div>
@@ -326,36 +326,45 @@
                        </div>
                     </div>
                     <div class="col-md-12">
-                       <div class="col-md-4">
-                          <form>
-
-                               <div class="form-group">
-                                  <label for="email">Birth date</label>
-                                  <input type="text" name="startdate" class="form-control"  value="01/01/2017">
-                               </div>
-
-                          </form>
-                       </div>
-                       <div class="col-md-4">
+                      <div class="col-md-10 nopadding">
+                        <div class="form-group">
+                           <select class="form-control option"  id="sel1">
+                              <option hidden>placeholder</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                           </select>
+                        </div>
+                      </div>
+                      <div class="col-md-2 nopadding">
                          <div class="form-group">
-                            <label for="sel1">Gender</label>
-                            <select class="form-control" id="sel1">
-                               <option hidden>Select</option>
-                               <option>Male</option>
-                               <option>female</option>
-                            </select>
+                            <div class="input-group">
+                               <div class="input-group-btn">
+                                  <button class="btn btn-default btn-plus" type="button" id="openform"><i class="fa fa-plus"></i></button>
+                               </div>
+                            </div>
                          </div>
-                      </form>
-                       </div>
-                       <div class="col-md-4">
-                          <form>
-                             <div class="form-group">
-                                <label>Personal Phone</label>
-                                <input type="email" class="form-control" placeholder="+250....." id="">
-                             </div>
-                          </form>
-                       </div>
+                      </div>
                     </div>
+
+                    <div style="display:none" class="col-md-12 open-form">
+                      <div class="col-md-10 nopadding">
+                        <div class="form-group">
+                           <input type="text" class="form-control" placeholder="text....." id="">
+                        </div>
+                      </div>
+                      <div class="col-md-2 nopadding">
+                         <div class="form-group">
+                            <div class="input-group">
+                               <div class="input-group-btn">
+                                  <button class="btn btn-default btn-plus" type="button" id="openform"><i class="fa fa-check"></i></button>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+
+
                     <div class="col-md-12">
                        <div class="col-md-4">
                           <form>

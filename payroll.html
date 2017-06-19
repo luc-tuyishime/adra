@@ -22,7 +22,7 @@
                         <img src="img/logo.png" class="adra-display">
                      </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-5">
                      <div class="adra-search">
                         <div id="custom-search-input">
                            <div class="input-group col-md-8">
@@ -36,7 +36,7 @@
                         </div>
                      </div>
                   </div>
-                  <div class="col-md-5">
+                  <div class="col-md-6">
                     <div id="navbar">
                      <div id="holder">
                      <div class="btn-employee">
@@ -108,7 +108,7 @@
                               <td></td>
                               <td></td>
                            </tr>
-                           <tr class="name-one">
+                           <tr class="name-one" data-target="#modal-dialog" data-toggle="modal">
                               <td><span class="glyphicon glyphicon-ok-sign"></span></td>
                               <td>lil tunechi</td>
                               <td>project manager</td>
@@ -279,7 +279,7 @@
                         </tbody>
                      </table>
                      <div class="fa-icon">
-                        <a href=""><button type="button"  class="btn btn-default btn-lg btn-report" id="project">Generate Report</button></a>
+                        <a href=""><button type="button"  class="btn btn-default btn-lg btn-report" data-target="#modal-dialog2" data-toggle="modal" id="project">Generate Report</button></a>
                      </div>
                      <div class="text-center">
                         <div class="pagination">
@@ -297,6 +297,84 @@
                </div>
             </div>
             </section>
+
+          <div id="modal-dialog" class="modal">
+           	<div class="modal-dialog">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                       <a href="#" data-dismiss="modal" aria-hidden="true" class="close">×</a>
+                        <h3>Are you sure</h3>
+                   </div>
+                   <div class="modal-body">
+                     <form>
+                        <div class="form-group">
+                          <label for="email">text:</label>
+                          <input type="email" class="form-control" id="text1">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">text:</label>
+                          <input type="text" class="form-control" id="text2">
+                        </div>
+                        <div class="form-group">
+                          <label for="comment">Comment:</label>
+                          <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                      </form>
+                        <a href=""><button type="submit" class="btn btn-success btn-add">SAVE</button></a>
+                   </div>
+                 </div>
+               </div>
+          </div>
+
+          <div id="modal-dialog2" class="modal">
+             <div class="modal-dialog modal-lg">
+                 <div class="modal-content">
+                   <div class="modal-header">
+                       <a href="#" data-dismiss="modal" aria-hidden="true" class="close">×</a>
+                   </div>
+                   <div class="modal-body">
+                     <div class="table-responsive">
+                     <table class="table">
+                       <thead>
+                         <tr>
+                           <th>Firstname</th>
+                           <th>Lastname</th>
+                           <th>Email</th>
+                           <th>Email</th>
+                           <th>Email</th>
+                         </tr>
+                       </thead>
+                       <tbody>
+                         <tr>
+                           <td>John</td>
+                           <td>Doe</td>
+                           <td>john@example.com</td>
+                            <td>john@example.com</td>
+                             <td>john@example.com</td>
+                         </tr>
+                         <tr>
+                           <td>Mary</td>
+                           <td>Moe</td>
+                           <td>mary@example.com</td>
+                           <td>john@example.com</td>
+                           <td>john@example.com</td>
+                         </tr>
+                         <tr>
+                           <td>July</td>
+                           <td>Dooley</td>
+                           <td>july@example.com</td>
+                           <td>john@example.com</td>
+                           <td>john@example.com</td>
+                         </tr>
+                       </tbody>
+                     </table>
+                   </div>
+                   </div>
+                   <div class="modal-footer">
+                   </div>
+                 </div>
+               </div>
+          </div>
          </main>
          <footer>
          </footer>
